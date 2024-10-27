@@ -4,8 +4,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public abstract class Pets extends Animal {
-
-    public Pets(String name, LocalDate birthDate, ArrayList<String> commands, String animalType) {
-        super(name, birthDate, commands, animalType);
+    private String animalType;
+    public Pets(String name, LocalDate birthDate, ArrayList<String> commands, String animalFamilyType) {
+        super(name, birthDate, commands, animalFamilyType, "Pet");
     }
 }

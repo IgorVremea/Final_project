@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Horses extends PackAnimals{
-    public Horses(String name, LocalDate birthDate, ArrayList<String> commands, String animalType) {
-        super(name, birthDate, commands, animalType);
+    public Horses(String name, LocalDate birthDate, ArrayList<String> commands, String animalFamilyType) {
+        super(name, birthDate, commands, "Horse");
     }
 }

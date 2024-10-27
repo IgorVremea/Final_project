@@ -2,18 +2,23 @@ package src.model.database;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.List;
 
 public abstract class Animal {
     private String name;
     private LocalDate birthDate;
-    private ArrayList<String> Commands;
-    private String AnimalType;
+    private ArrayList<String> commands;
+    private String animalFamilyType;
+    private String animalType;
 
-    public Animal(String name, LocalDate birthDate, ArrayList<String> commands, String animalType) {
+    public Animal(String name, LocalDate birthDate, ArrayList<String> commands, String animalFamilyType, String animalType) {
         this.name = name;
         this.birthDate = birthDate;
-        Commands = commands;
-        AnimalType = animalType;
+        this.commands = commands;
+        this.animalFamilyType = animalFamilyType;
+        this.animalType = animalType;
+    }
+
+    public ArrayList<String> getCommands() {
+        return commands;
     }
 }
