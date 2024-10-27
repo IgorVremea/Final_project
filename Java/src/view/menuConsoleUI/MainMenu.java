@@ -4,6 +4,7 @@ import src.view.ConsoleUI;
 import src.view.menuConsoleUI.commands.ShowAnimalsCommandsCommand;
 import src.view.menuConsoleUI.commands.ShowAnimalListCommand;
 import src.view.menuConsoleUI.commands.StopCommand;
+import src.view.menuConsoleUI.commands.TeachAnimalCommandCommand;
 
 import java.util.ArrayList;
 
@@ -14,6 +15,7 @@ public class MainMenu extends Menu{
         commands = new ArrayList<>();
         commands.add(new ShowAnimalListCommand(consoleUI));
         commands.add(new ShowAnimalsCommandsCommand(consoleUI));
+        commands.add(new TeachAnimalCommandCommand(consoleUI));
 
         commands.add(new StopCommand(consoleUI));
     }

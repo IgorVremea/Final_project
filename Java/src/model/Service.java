@@ -17,4 +17,7 @@ public class Service {
     public String getAnimalCommands(int animalId) throws Exception{
         return animals.getAnimal(animalId).getCommands().toString();
     }
+    public void teachAnimalCommand(int animalId, String cmd) throws Exception {
+        animals.getAnimal(animalId).addCommand(cmd);
+    }
 }

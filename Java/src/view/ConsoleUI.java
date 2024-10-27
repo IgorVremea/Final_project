@@ -44,18 +44,39 @@ public class ConsoleUI implements View {
     public void showAnimalList(){
         System.out.println(presenter.getAnimalList());
     }
-    public void ShowAnimalCommands(){
+    public void showAnimalCommands(){
         int animalId = -1;
         System.out.println("Choose an animal:");
         showAnimalList();
-        System.out.println("Your choice: ");
+        System.out.print("Your choice: ");
         String choiceStr = scanner.nextLine();
-        if(checkChoice(choiceStr)){
+        if(checkChoice(choiceStr)) {
             animalId = Integer.parseInt(choiceStr);
+            try {
+                System.out.println(presenter.getAnimalCommands(animalId - 1));
+            } catch (Exception e) {
+                System.out.println("You entered wrong data!");
+            }
+        } else {
+            System.out.println("You entered wrong data!");
         }
-        try{
-            System.out.println(presenter.getAnimalCommands(animalId-1));
-        }catch (Exception e){
+    }
+    public void teachAnimalCommand(){
+        System.out.println("Who do you want to teach a new command?");
+        showAnimalList();
+        System.out.print("Your choice: ");
+        String choiceStr = scanner.nextLine();
+        int animalId = -1;
+        if(checkChoice(choiceStr)) {
+            animalId = Integer.parseInt(choiceStr);
+            System.out.println("What command should be added to the list?");
+            String cmd = scanner.nextLine();
+            try {
+                presenter.teachAnimalCommand(animalId-1, cmd);
+            } catch (Exception e){
+                System.out.println("You entered wrong data!");
+            }
+        } else {
             System.out.println("You entered wrong data!");
         }
     }

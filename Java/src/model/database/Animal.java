@@ -30,5 +30,8 @@ public abstract class Animal {
                 " " + birthDate +
                 " commands=" + commands;
     }
+    public void addCommand(String cmd){
+        commands.add(cmd);
+    }
 
 }

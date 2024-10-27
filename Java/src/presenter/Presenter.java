@@ -30,4 +30,7 @@ public class Presenter {
     public String getAnimalCommands(int animalId) throws Exception{
         return service.getAnimalCommands(animalId);
     }
+    public void teachAnimalCommand(int animalId, String cmd)throws Exception{
+        service.teachAnimalCommand(animalId, cmd);
+    }
 }

@@ -8,6 +8,6 @@ public class ShowAnimalsCommandsCommand extends Command{
     }
     @Override
     public void execute() {
-        getConsoleUI().ShowAnimalCommands();
+        getConsoleUI().showAnimalCommands();
     }
 }
