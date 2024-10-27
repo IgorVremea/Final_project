@@ -79,6 +79,7 @@ public class ConsoleUI implements View {
         } else {
             System.out.println("You entered wrong data!");
         }
+        System.out.println("Commands was added with success");
     }
     public void addAnimal(){
         System.out.println("\nEnter data according to this template:");
@@ -91,11 +92,13 @@ public class ConsoleUI implements View {
         } catch(Exception e){
             System.out.println(e.getMessage());
         }
+        System.out.println("Animal was added with success!");
     }
     public void addTestAnimals(){
         presenter.addTestAnimals();
+        System.out.println("Test animals was added with success!");
     }
     public void showCounterVariable(){
-        System.out.println(presenter.getCounterVariable());
+        System.out.println("Counter variable value: " + presenter.getCounterVariable());
     }
 }
