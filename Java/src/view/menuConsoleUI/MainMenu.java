@@ -15,6 +15,7 @@ public class MainMenu extends Menu{
         commands.add(new ShowAnimalsCommandsCommand(consoleUI));
         commands.add(new TeachAnimalCommandCommand(consoleUI));
         commands.add(new AddTestAnimalsCommand(consoleUI));
+        commands.add(new ShowCounterVariableCommand(consoleUI));
 
         commands.add(new StopCommand(consoleUI));
     }

@@ -30,4 +30,7 @@ public class Presenter {
     public void addTestAnimals(){
         service.addTestAnimals();
     }
+    public int getCounterVariable(){
+        return service.getCounterVariable();
+    }
 }

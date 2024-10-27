@@ -95,4 +95,7 @@ public class ConsoleUI implements View {
     public void addTestAnimals(){
         presenter.addTestAnimals();
     }
+    public void showCounterVariable(){
+        System.out.println(presenter.getCounterVariable());
+    }
 }

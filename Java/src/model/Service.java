@@ -7,12 +7,19 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Service {
-    public Animals animals;
+    private Animals animals;
+    private CounterAnimal counterAnimal;
     public Service(){
         animals = new Animals();
+        counterAnimal = new CounterAnimal();
     }
     public void addAnimalInList(Animal animal){
-        animals.addAnimal(animal);
+        try(CounterAnimal temp = counterAnimal){
+            animals.addAnimal(animal);
+            temp.add();
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
     public void addAnimalInList(String str) throws Exception{
         String[] parsedStr = str.split(" ");
@@ -58,6 +65,9 @@ public class Service {
     }
     public void teachAnimalCommand(int animalId, String cmd) throws Exception {
         animals.getAnimal(animalId).addCommand(cmd);
+    }
+    public int getCounterVariable(){
+        return counterAnimal.getCount();
     }
 
 }
