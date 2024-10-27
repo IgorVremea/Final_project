@@ -21,4 +21,13 @@ public abstract class Animal {
     public ArrayList<String> getCommands() {
         return commands;
     }
+
+    @Override
+    public String toString() {
+        return  animalFamilyType +
+                " " + animalType +
+                " '" + name + '\'' +
+                " " + birthDate +
+                " commands=" + commands;
+    }
 }

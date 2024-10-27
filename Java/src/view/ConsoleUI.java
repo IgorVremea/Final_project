@@ -1,8 +1,11 @@
 package src.view;
 
-public class ConsoleUI implements View {
-    public ConsoleUI(){
+import src.presenter.Presenter;
 
+public class ConsoleUI implements View {
+    private Presenter presenter;
+    public ConsoleUI(){
+        this.presenter = new Presenter(this);
     }
 
     @Override
