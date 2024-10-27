@@ -33,11 +33,15 @@
 ## TASK #6✅
 <img src="images/DB_scheme_classes.png" width=500px>
 
-## TASK #7✅
+## TASKS #7-#12✅
 ### Команды в Ubuntu:
 1. > sudo mysql -u root -p
 ### Команды в MySQL:
 Остальные команды для заданий 8-12 сохраненны в файле [``mySqlPart.sql``](mySqlPart.sql)
+
+# Java
+## Tasks #13-#14✅
+Все файлы кода хранятся в папке [``Java``](Java/)
 
 
 
