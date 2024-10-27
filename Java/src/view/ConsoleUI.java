@@ -80,4 +80,19 @@ public class ConsoleUI implements View {
             System.out.println("You entered wrong data!");
         }
     }
+    public void addAnimal(){
+        System.out.println("\nEnter data according to this template:");
+        System.out.println("Template:\tName\tAnimal's_Type\tBirth_date(YYYY-MM-DD)\tCommands(with ',')");
+        System.out.println("Example:\tGosha\tHorse\t\t\t2019-05-15\t\t\t\tPrygat,Salto,Aport,No");
+        System.out.print("Your data:");
+        String data = scanner.nextLine();
+        try{
+            presenter.addAnimal(data);
+        } catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+    public void addTestAnimals(){
+        presenter.addTestAnimals();
+    }
 }
