@@ -11,7 +11,10 @@ public class Service {
     public void addAnimalInList(Animal animal){
         animals.addAnimal(animal);
     }
-    public void showAnimalList(){
-        System.out.println(animals);
+    public String getAnimalList(){
+        return animals.toString();
+    }
+    public String getAnimalCommands(int animalId) throws Exception{
+        return animals.getAnimal(animalId).getCommands().toString();
     }
 }
