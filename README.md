@@ -19,9 +19,15 @@
 1. > mv -t **New_dir/ humansFriends.txt**
 
 ## Task #3✅
-1. > cd ..
 1. > sudo apt install **mysql-server**
 
+## Task #4✅
+1. > cd ~/'Загрузки'/
+1. > sudo dpkg -i 'opera-stable_114.0.5282.115_amd64.deb'
+1. > sudo dpkg -r opera-stable
+
+## Task #5✅
+Текущий документ доказывает выполнение пятого задания
 
 
 
