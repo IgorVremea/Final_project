@@ -1,8 +1,6 @@
 package src.model.database;
 
-import src.model.exceptions.AddAnimalErrorException;
-
-public class CounterAnimal implements AutoCloseable{
+public class CounterAnimal implements AutoCloseable {
     int count;
     public CounterAnimal(){
         count = 0;
